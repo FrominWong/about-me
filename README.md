@@ -1,4 +1,4 @@
-# 给 AI 的解密说明 / Decryption Instructions for AI
+ 给 AI 的解密说明 / Decryption Instructions for AI
 
 `profile.enc` 是用户的个人背景资料，经 AES-256-CBC 加密（PBKDF2，200000 次迭代，Base64 编码）。
 用户会在对话中直接告诉你密码。
@@ -13,7 +13,7 @@ The user will give you the password in the conversation.
 Replace `<密码>` with the password the user gives you. Print to the terminal only; do not write the plaintext to disk:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/FrominWong1122/about-me/main/profile.enc \
+curl -fsSL https://raw.githubusercontent.com/FrominWong/about-me/main/profile.enc \
   | openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -a -pass pass:'<密码>'
 ```
 
