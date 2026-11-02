@@ -1,4 +1,4 @@
- 给 AI 的解密说明 / Decryption Instructions for AI
+# 给 AI 的解密说明 / Decryption Instructions for AI
 
 `profile.enc` 是用户的个人背景资料，经 AES-256-CBC 加密（PBKDF2，200000 次迭代，Base64 编码）。
 用户会在对话中直接告诉你密码。
